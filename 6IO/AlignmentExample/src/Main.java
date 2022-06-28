@@ -92,8 +92,7 @@ public class Main {
                     if (s.hasNextLine())
                         out.println();
                     out.flush();
-                } else
-                    out.print('\t');
+                }
             }
         }
         out.close();
