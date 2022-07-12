@@ -6,7 +6,7 @@ transversing trees, and simplifying a complex task.
 
 ``` java 
     public static void myRecursiveMethod(String input) {
-        if (input.length == 0) { // base case
+        if (input.length() == 0) { // base case
             return;
         }
         System.out.print(input.charAt(0));
@@ -15,4 +15,4 @@ transversing trees, and simplifying a complex task.
 ```
 
 Always have a base case to prevent the recursive method from becoming an infinite loop.
-
+In this example the base case is when the input length is equal to 0; 
