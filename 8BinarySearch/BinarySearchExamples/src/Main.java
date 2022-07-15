@@ -6,6 +6,8 @@ public class Main {
         Comparable[] output = new Comparable[size];
         for(int i = 0; i < size;i++)
             output[i] = Math.abs(r.nextInt())%(2*size);
+
+        Arrays.sort(output);
         return output;
     }
     public static boolean linearSearch(Comparable[] array, Comparable target) {
@@ -31,7 +33,6 @@ public class Main {
     public static boolean binarySearch(Comparable[] array, Comparable target) {
         return binarySearchHelper(array, target, 0, array.length - 1);
     }
-
 
     public static int sqrtUsingBinarySearchV2(int n) {
         if (n <= 1)
@@ -74,13 +75,18 @@ public class Main {
 
 
     public static boolean binarySearchIterative(Comparable[] array, Comparable target) {
+
         int low = 0, high = array.length - 1;
-        while(low <= high) {
+        while (low <= high) {
             int mid = (int)(low/2.0+high/2.0);
             int comp = target.compareTo(array[mid]);
-            if(comp == 0) return true;
-            if(comp > 0) low = mid + 1;
-            else high = mid - 1;
+
+            if (target.compareTo(array[mid]) == 0) return true;
+            if (target.compareTo(array[mid]) > 0) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
         }
         return false;
     }
@@ -98,11 +104,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
+
         System.out.println(sqrtUsingBinarySearch(2000000000));
         System.out.flush();
         Comparable[] array = randomNumberGenerator(10000000);
         //let's sort it....
-        Arrays.sort(array);
         long start = System.nanoTime();
         System.out.println("Result of searching 47 is "+
                 binarySearchIterative(array, 47));
