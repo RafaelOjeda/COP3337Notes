@@ -1,5 +1,7 @@
 # Exception Handling
 
+The Exception class is a subclass of the Throwable class. Another subclass of Throwable is the Error class. Errors are caused by the system not the program.
+
 <p> Exception handling is exactly what it sounds like. It is being able to handle the errors that 
 one may get from code and managing it in your own way. For example if you ask a user to
 input a String, and they input an int you can handle it to tell them to try again and display a
@@ -11,12 +13,12 @@ RuntimeException.
 </p>
 Ways of handling exceptions: <br />
 1. Try-catch block
-2. throws keyword
+<br />2. throws keyword
 
-Try-catch block is created like this:
+<br />Try-catch block is created like this:
 ``` java
     try {
-        ...
+        // code that throws exception
     } catch (exceptionName e) {
         // code if it breaks
     } finally {
@@ -43,3 +45,25 @@ nearest block or it'll handle it on its own.</p>
 ```java 
     throw new NullPointerException("Exception Message.")
 ```
+
+## User Defined Exception Classes
+One can create their own exception classes. Must inherit a predefined exception class.
+
+```java
+    class InvalidNumberException extends Exception {
+        public InvalidNumberException() {
+            super();
+        }
+
+        public InvalidNumberException(String message) {
+            super(message);
+        }
+    }
+```
+
+## Vocabulary
+- Try: code that throws exception
+- Catch: code to be excecuted if exception is thrown and exception handler.
+- Throw: To throw an object of type Exception
+- Throws: To declare method throws Exception and does not handle.
+
