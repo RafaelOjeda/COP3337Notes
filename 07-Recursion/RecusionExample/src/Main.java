@@ -60,22 +60,57 @@ public class Main {
      *  a = 2
      *  base case becomes true
      */
-//
-    public static String whatAboutThis(String input) {
-        int l = input.length();
 
-        if (l <= 0) {
-            return input;
+    public static void backwardCounting(int n) {
+        if (n > 0) {
+            System.out.println(n);
+            n--;
+            backwardCounting(n);
         }
+    }
 
-        return whatAboutThis(input.substring(l/2))
-                + whatAboutThis(input.substring(0,l/2));
+    public static void verticalWriting(int n) {
+        if (n < 10) {
+            System.out.println(n);
+        } else {
+            verticalWriting(n/10);
+            System.out.println(n%10);
+        }
+    }
+
+    public static void verticalReverseWriting(int n) {
+        if (n < 10) {
+            System.out.println(n);
+        } else {
+            System.out.println(n%10);
+            verticalWriting(n/10);
+        }
+    }
+
+    public static int factorial(int n) {
+        if (n == 1) {
+            return 1;
+        } else {
+            return factorial(n-1)*n;
+        }
     }
 
     public static void main(String[] args) {
         tailRecursion("Message");
+        System.out.println();
+
         headRecursion("Message");
+
+        System.out.println();
         System.out.println(whatDoesThisDo(4));
-        System.out.println("Hello World!");
+
+        System.out.println();
+        backwardCounting(10);
+
+        System.out.println();
+        verticalWriting(4985);
+
+        System.out.println();
+        verticalReverseWriting(4985);
     }
 }

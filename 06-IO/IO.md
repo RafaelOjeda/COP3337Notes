@@ -1,8 +1,13 @@
 # Input / Output
 Reading and Writing is what is I/O is. The Scanner object is not just used to read input from
 the command line it's also used to read from a file. Instead of passing the parameter 
-"System.in" you could pass it a File object. From there the Scanner object can be used to
+"System.in" you could pass it a File/FileInputStream object. From there the Scanner object can be used to
 read a File just line any command line.
+
+<b>FileInputStream class</b> - Used with Scanner. Used to read from file. <br />
+<b>FileOutputStream class</b> - Used with PrintWriter. Used to write onto file. <br />
+<b>File class</b> - Uses both PrintWriter and Scanner<br />
+
 
 ### <u>Output</u>
 
@@ -21,6 +26,8 @@ When you are doing using the Scanner it is important to close it using the .clos
 ``` java
     PrintWriter out = new PrintWriter("fileSource");   
 ```
+
+PrintWriter takes 2 types of parameters. File name as a string and FileOutputStream object which takes the file name as a string and a boolean value to append (true) or overwrite (false)
 To print on a file using the PrintWriter method the same methods of a Scanner object can
 be used. It is important to always close a file using the .close() method in order to save it.
 For the changes to be seen immediately onto the file you can use the .flush() method.
