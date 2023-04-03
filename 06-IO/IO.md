@@ -6,8 +6,12 @@ read a File just line any command line.
 
 <b>FileInputStream class</b> - Used with Scanner. Used to read from file. <br />
 <b>FileOutputStream class</b> - Used with PrintWriter. Used to write onto file. <br />
+<<<<<<< HEAD
 <b>File class</b> - Uses both PrintWriter and Scanner<br />
 
+=======
+<b>File class<b /> - Uses both PrintWriter and Scanner<br />
+>>>>>>> af1946fd160a4d87e4642cfc29c869cac0ad6d05
 
 ### <u>Output</u>
 
