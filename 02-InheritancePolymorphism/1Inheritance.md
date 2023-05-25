@@ -29,3 +29,5 @@ public class childClass extends superClass {
     }
 }
 ```
+
+Note: When extending the parents class is called for before the childs class.

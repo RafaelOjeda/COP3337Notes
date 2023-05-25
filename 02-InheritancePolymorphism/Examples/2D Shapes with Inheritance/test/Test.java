@@ -12,6 +12,7 @@ public class Test {
 		shapes.add(new TwoDShape("Red"));
 		for(TwoDShape shape: shapes)
 			System.out.println(shape);
+			
 	}
 
 }

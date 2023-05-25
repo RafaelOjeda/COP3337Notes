@@ -1,5 +1,5 @@
 import java.util.*;
-public class Main {
+public class Searching {
 
     public static Comparable[] randomNumberGenerator(int size) {
         Random r = new Random();
@@ -103,6 +103,23 @@ public class Main {
         return -1;
     }
 
+    public static int recursiveBinarySearch (int[] array, int value, int start, int end) {
+        
+
+        if (start < end) {
+            return -1;
+        } else {
+            int mid = (start + end)/2;
+
+            if (array[mid] == value) {
+                return mid;
+            } else if (array[mid] > value]) {
+                return recursiveBinarySearch(array, value, 0, mid-1);
+            } else {
+                return recursiveBinarySearch(array, value, mid+1, end);
+            }
+        }
+    }
     public static void main(String[] args) {
 
         System.out.println(sqrtUsingBinarySearch(2000000000));
@@ -116,6 +133,12 @@ public class Main {
         System.out.printf("Total time is %.3f milisecond.\n",
                 (System.nanoTime()-start)/1000000.0);
 
+
+        int[] numbers = {1,3,4,5,6,7,8,9,2,11,13};
+
+        int res = recursiveLinearSearch(numbers, 7, numbers.length);
+
+        System.out.println(res);
     }
 
 }

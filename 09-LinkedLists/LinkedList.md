@@ -6,13 +6,22 @@ Exists in java.util </br>
 extends List interface. </b>
 
 <u>Difference Between ArrayList and LinkedList</u></br>
-Linked List is has sequential access while ArrayList has random access.
+Linked List has sequential access while ArrayList has random access.
 
 Different types of Linked List:
 * Singly Linked List can go to the next
 * Doubly Linked List like Singly but can go to the previous item as well.
 * Circular Singly Linked List the last item can refer to the first.
  Circular Doubly Linked List a mix of circular singly and doubly linked list
+
+<u>Singly Linked List</u><br/>
+A linked list is made up of nodes. Each node in a singly linked list contains 2 things. The address of the next node (if last the next node is of value null) and the value of the node.
+
+<u>Doubly Linked List</u><br/>
+Doubly Linked List contains three values the previous address of node, the next address of node and the value of the current node.
+
+<u>Adding Values on Nth node</u><br/>
+To add a value on any position. The position N-1 must be found. Then the next address of N-1 should be set to N and the next address of N should be set to the previous next of N-1.
 
   | Method Names                                      | Description                                          |
   |------------------------------------------------------|---------------------------------------------------|

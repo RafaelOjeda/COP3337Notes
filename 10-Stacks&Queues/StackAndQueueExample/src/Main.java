@@ -1,6 +1,4 @@
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 public class Main {
 
     private static boolean isInt(char num) {
@@ -19,7 +17,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         Queue<Integer> num = new LinkedList<Integer>();
         Queue<Character> letter = new LinkedList<Character>();
-        
+
         System.out.print("Input a text:");
         String input = in.nextLine();
 
@@ -34,5 +32,22 @@ public class Main {
 
         System.out.println("Numbers: " + num);
         System.out.println("Characters: " + letter);
+
+
+        /*
+         * PriorityQueue may be sorted for each index to have a priority unlike other Queues where the items are fixed based on FIFO
+         * Example: You are stuck in traffic and an ambulance has its sirens on. The ambulance has higher priority so it will skip the traffic.
+         */
+
+        PriorityQueue pq = new PriorityQueue();
+
+        pq.offer("K");
+        pq.offer("C");
+        pq.offer("A");
+        pq.offer("B");
+
+        System.out.println(pq);
+
+
     }
 }

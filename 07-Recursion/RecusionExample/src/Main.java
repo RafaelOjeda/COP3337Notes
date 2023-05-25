@@ -95,6 +95,34 @@ public class Main {
         }
     }
 
+    public static int multiply (int x, int y) {
+        if (y == 0) {
+            return n;
+        } else if (y == 1) {
+            return x;
+        } else {
+            return multiply(x, (y-1));
+        }
+    }
+
+    public static int power (int base, int exp) {
+        if (exp == 0) {
+            return 1;
+        } else if (exp == 1){
+            return base;
+        } else {
+            return power(base, (exp - 1)) * 1;
+        }
+    }
+
+    public static int fibonacci(int n) {
+        if (n > 1) {
+            return fibonacci(n-1) + fibonacci(n-2);
+        } else {
+            return n;
+        }
+    }
+
     public static void main(String[] args) {
         tailRecursion("Message");
         System.out.println();
@@ -112,5 +140,11 @@ public class Main {
 
         System.out.println();
         verticalReverseWriting(4985);
+
+        System.out.println();
+        System.out.println(multiply(4, 3));
+
+        System.out.println();
+        System.out.println(fibonacci(5));
     }
 }

@@ -1,3 +1,5 @@
+This is a quick review of what some of your classes may have looked like in Programming 1.
+
 ``` java
 import java.util.*;
 public class Gradebook{
