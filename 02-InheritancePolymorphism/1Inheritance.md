@@ -30,4 +30,8 @@ public class childClass extends superClass {
 }
 ```
 
-Note: When extending the parents class is called for before the childs class.
+Note: When extending the parents class is called for before the child's class.
+
+Note: When the child classes object is created the parent class constructor is always called first.
+
+Note: You must call parent constructor in the child class.

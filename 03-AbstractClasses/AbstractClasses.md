@@ -1,6 +1,10 @@
 # Abstract Classes/Methods
 
-
+* cannot be instantiated
+* abstract keyword
+* it can have instance variables, constructors
+* may or may not have abstract classes.
+* all children must modify the abstract methods
 ## Abstract Classes
 Definition: abstract classes are classes that cannot be used to create objects. 
 To access that abstract class the class must be inherited. 
