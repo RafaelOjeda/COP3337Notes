@@ -17,6 +17,7 @@ public class StudentDemo {
         std.add(s3);
         std.add(s4);
 
+        for (Student s: std) System.out.println(s);
         Collections.sort(std);
     } 
 

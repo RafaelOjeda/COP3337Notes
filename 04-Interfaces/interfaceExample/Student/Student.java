@@ -36,13 +36,20 @@ public class Student implements Comparable<Student> {
     }
     @Override
     public int compareTo(Student o) {
-        if (this.studentID > o.studentID) {
-            return 1;
-        } else if (this.studentID < o.studentID) {
-            return -1;
+
+        if (getStudentName().compareTo(o.getStudentName()) != 0) {
+            return getStudentName().compareTo(o.getStudentName());
         } else {
-            return 0;
+            if (this.studentID > o.studentID) {
+                return 1;
+            } else if (this.studentID < o.studentID) {
+                return -1;
+            } else {
+                return 0;
+            }
         }
+
+
     }
 
     @Override

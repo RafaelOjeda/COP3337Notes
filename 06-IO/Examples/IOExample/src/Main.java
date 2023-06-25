@@ -7,24 +7,49 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        // WRITTING EXAMPLE        
+        // Scanner keyboard = new Scanner(System.in);
+        // System.out.println("Enter file name: ");
+        // String fileName = keyboard.nextLine();
+        // PrintWriter writer = null;
         
+        // try {
+        //     // Append mode enabled.
+        //     writer = new PrintWriter(new FileOutputStream(fileName, true));
+        // } catch (FileNotFoundException e) {
+        //     System.out.println("File not found");
+        //     System.exit(0);
+        // }
 
-        Scanner input = null;
-        PrintWriter output = null;
+        // System.out.println("Enter any line: ");
+        // String line = keyboard.nextLine();
+        // writer.println(line);
+        // writer.close();
+
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter file name: ");
+        String fileName = keyboard.nextLine();
+        Scanner fileScanner = null;
 
         try {
-            input = new Scanner(new FileInputStream("reader.txt"));
-            output = new PrintWriter(new FileOutputStream("writer.txt"));
+            FileInputStream read = new FileInputStream(fileName);
+            fileScanner = new Scanner(read);
         } catch (FileNotFoundException e) {
-            System.out.println("FileNotFoundException");
+            System.out.println("Unable to open: " + fileName);
             System.exit(0);
         }
-    
-        while (input.hasNextLine()) {
-            output.println(input.nextLine());
+
+        // Reads first line
+        // System.out.println(fileScanner.nextLine());
+
+        // Prints word by word
+        while (fileScanner.hasNext()) {
+            System.out.println(fileScanner.next());
         }
 
-        input.close();
-        output.close();
+        
+        while (fileScanner.hasNextLine()) {
+            System.out.println(fileScanner.nextLine());
+        }
     }
 }
