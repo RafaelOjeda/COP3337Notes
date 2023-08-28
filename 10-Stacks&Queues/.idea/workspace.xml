@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="204f085c-0465-4db6-adda-b611ee18a51f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../08-Searching&amp;Sorting/BinarySearchExamples/src/Sorting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-LinkedLists/ArrayListsExamples/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StackAndQueueExample/src/ArrayDeque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../07-Recursion/RecusionExample/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07-Recursion/RecusionExample/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-BinarySearch/BinarySearch.md" beforeDir="false" afterPath="$PROJECT_DIR$/../08-Searching&amp;Sorting/Search.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-BinarySearch/BinarySearchExamples/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../08-Searching&amp;Sorting/BinarySearchExamples/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-BinarySearch/BinarySearchExamples/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-Searching&amp;Sorting/BinarySearchExamples/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-BinarySearch/BinarySearchExamples/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-Searching&amp;Sorting/BinarySearchExamples/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-BinarySearch/BinarySearchExamples/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-Searching&amp;Sorting/BinarySearchExamples/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-BinarySearch/BinarySearchExamples/BinarySearchExamples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-Searching&amp;Sorting/BinarySearchExamples/BinarySearchExamples.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-BinarySearch/BinarySearchExamples/out/production/BinarySearchExamples/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../08-Searching&amp;Sorting/BinarySearchExamples/out/production/BinarySearchExamples/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-BinarySearch/BinarySearchExamples/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../08-Searching&amp;Sorting/BinarySearchExamples/src/Searching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-LinkedLists/LinkedLinkExamples/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../09-LinkedLists/LinkedLinkExamples/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-LinkedLists/LinkedList.md" beforeDir="false" afterPath="$PROJECT_DIR$/../09-LinkedLists/LinkedList.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StackAndQueueExample/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StackAndQueueExample/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StackAndQueueExample/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StackAndQueueExample/StackAndQueueExample.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StackAndQueueExample/out/production/StackAndQueueExample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StackAndQueueExample/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +20,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rafae/OneDrive/Desktop/Code Workspace/Java/Courses/Programming2Projects/1Notes/10-Stacks&amp;Queues&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/rafae/OneDrive/Desktop/Code Workspace/ScratchPaper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="10-Stacks&amp;Queues" />
@@ -79,6 +60,9 @@
       <workItem from="1681739375964" duration="437000" />
       <workItem from="1681739839355" duration="31000" />
       <workItem from="1681739875643" duration="37000" />
+      <workItem from="1688766148896" duration="195000" />
+      <workItem from="1688847198342" duration="8000" />
+      <workItem from="1688847648991" duration="53000" />
     </task>
     <servers />
   </component>
