@@ -4,14 +4,14 @@ public class SumOfElements {
     public static void main(String[] args) {
 
         int[] num;
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
         int sum = 0;
         Scanner scan = new Scanner(System.in);
 
         System.out.println("How many values do you want to enter: ");
         num = new int[scan.nextInt()];
-
+        int min = num[0];
+        int max = num[0];
+        
         System.out.println("Enter " + num.length + " values: \n");
 
         for (int i = 0; i < num.length; i++) {
